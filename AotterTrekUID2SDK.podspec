@@ -19,7 +19,8 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
   s.swift_versions = ['5.0']
-  s.source_files          = 'Sources/UID2/*', 'Sources/UID2/Data/*', 'Sources/UID2/Extensions/*', 'Sources/UID2/Networking/*', 'Sources/UID2/Properties/*'
+  s.source_files          = 'Sources/UID2/*', 'Sources/UID2/Data/*', 'Sources/UID2/Extensions/*', 'Sources/UID2/Networking/*', 'Sources/UID2/Properties/*.swift'
+  s.exclude_files         = "Sources/UID2/Properties/*.plist"
   
   # s.resource_bundles = {
   #   'AotterTrekUID2SDK' => ['AotterTrekUID2SDK/Assets/*.png']
