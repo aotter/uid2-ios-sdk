@@ -14,13 +14,12 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license               = "MIT"
   s.author                = "Aotter Inc."
-  s.source                = { :git => 'https://github.com/aotter/uid2-ios-sdk', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/aotter/uid2-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
-  s.source_files          = 'Sources/**'
-  s.static_framework      = true
+  s.ios.deployment_target = '13.0'
+  s.swift_versions = ['5.0']
+  s.source_files          = 'Sources/UID2/*', 'Sources/UID2/Data/*', 'Sources/UID2/Extensions/*', 'Sources/UID2/Networking/*', 'Sources/UID2/Properties/*'
   
   # s.resource_bundles = {
   #   'AotterTrekUID2SDK' => ['AotterTrekUID2SDK/Assets/*.png']
